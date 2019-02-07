@@ -1,0 +1,5 @@
+java_version: 8.0.201-oracle
+maven_version: 3.6.0
+development_packages:
+  - java {{java_version}}
+  - maven {{maven_version}}

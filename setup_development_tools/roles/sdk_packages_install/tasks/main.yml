@@ -1,0 +1,7 @@
+---
+- name: Add sdkman in .bashrc and Install Development packages
+  shell: source $HOME/.sdkman/bin/sdkman-init.sh && sdk install {{item}}
+  with_items: "{{development_packages}}"
+  args:
+    executable: /bin/bash
+  become: no

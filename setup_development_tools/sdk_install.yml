@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  become: yes
+  vars:
+    user_home_path: '/home/scarick'
+    sdkman_folder: '{{user_home_path}}/.sdkman'
+    sdkman_script_install_url: 'https://get.sdkman.io'
+  roles:
+    - sdk_install
+    - sdk_packages_install
